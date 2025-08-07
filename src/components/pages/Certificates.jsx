@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Certifications() {
+function Certificates() {
   const certificates = [
     {
       title: "Programming in JAVA",
@@ -110,4 +110,4 @@ function Certifications() {
   );
 }
 
-export default Certifications;
+export default Certificates;
