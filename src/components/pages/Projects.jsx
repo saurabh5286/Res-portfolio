@@ -23,7 +23,7 @@ const Projects = () => {
         id: 3,
         name: "Weather App",
         description: "A weather forecasting application.",
-        url: "https://your-weather-app.com",
+        url: "https://weather-app-seven-kappa-36.vercel.app/",
       },
       {
         id: 4,
@@ -35,13 +35,13 @@ const Projects = () => {
         id: 5,
         name: "SnowCourse landing page",
         description: "It is a SPA (single page application)",
-        url: "https://snowcourse-landing.com",
+        url: "https://github.com/saurabh5286",
       },
       {
         id: 6,
         name: "Figma - Barber Shop",
         description: "It is a fully responsive web app with functionality",
-        url: "https://barber-shop-figma.com",
+        url: "https://github.com/saurabh5286",
       },
     ].map((project) => (
       <li key={project.id} className="bg-gray-200 p-4 rounded-lg shadow-md">
