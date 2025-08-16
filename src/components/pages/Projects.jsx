@@ -17,13 +17,13 @@ const Projects = () => {
         id: 2,
         name: "E-commerce App",
         description: "An online shopping platform.",
-        url: "https://forever-by-saurabh5286.vercel.app/",
+        url: "https://forever-by-saurabh5286.vercel.app",
       },
       {
         id: 3,
         name: "Weather App",
         description: "A weather forecasting application.",
-        url: "https://weather-app-seven-kappa-36.vercel.app/",
+        url: "https://weather-app-seven-kappa-36.vercel.app",
       },
       {
         id: 4,
