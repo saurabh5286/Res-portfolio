@@ -44,7 +44,6 @@ function Certificates() {
       imgAlt: "Internship Certificate",
       id: "unstop-cert",
     },
-    
     {
       title: Vocational Training from ZAGER",
       description: "ZAGER",
