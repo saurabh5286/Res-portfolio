@@ -44,6 +44,14 @@ function Certificates() {
       imgAlt: "Internship Certificate",
       id: "unstop-cert",
     },
+    
+    {
+      title: Vocational Training from ZAGER",
+      description: "ZAGER",
+      imgSrc: "/vt.jpg",
+      imgAlt: "VT Certificate",
+      id: "vt-cert",
+    },
   ];
 
   const [activeImage, setActiveImage] = useState(null);
