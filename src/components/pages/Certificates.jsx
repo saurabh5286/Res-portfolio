@@ -45,7 +45,7 @@ function Certificates() {
       id: "unstop-cert",
     },
     {
-      title: Vocational Training from ZAGER",
+      title: "Vocational Training from ZAGER",
       description: "ZAGER",
       imgSrc: "/vt.jpg",
       imgAlt: "VT Certificate",
