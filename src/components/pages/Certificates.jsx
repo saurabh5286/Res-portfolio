@@ -5,9 +5,16 @@ function Certificates() {
     {
       title: "Programming in JAVA",
       description: "mindluster",
-      imgSrc: "/Java.jpg",
+      imgSrc: "/JS.jpg",
       imgAlt: "Java Certificate",
       id: "java-cert",
+    },
+    {
+      title: "JavaScript Fundamentals",
+      description: "GreatStack",
+      imgSrc: "/JavaScript.jpg",
+      imgAlt: "JavaScript Certificate",
+      id: "javascript-cert",
     },
     {
       title: "HTML & CSS Practical Learning",
