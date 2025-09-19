@@ -37,6 +37,14 @@ function Certificates() {
       imgAlt: "React Certificate",
       id: "react-cert",
     },
+    
+    {
+      title: "AI For Beginners",
+      description: "HP Life",
+      imgSrc: "/HP.jpg",
+      imgAlt: "HP Certificate",
+      id: "hp-cert",
+    },
     {
       title: "Graphic Design with Photoshop",
       description: "Mindluster",
