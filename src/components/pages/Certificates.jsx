@@ -53,18 +53,19 @@ function Certificates() {
       id: "graphic-cert",
     },
     {
-      title: "Internship from Unstop Academy",
-      description: "Unstop",
-      imgSrc: "/Unstop.jpg",
-      imgAlt: "Internship Certificate",
-      id: "unstop-cert",
-    },
-    {
       title: "Vocational Training from ZAGER",
       description: "ZAGER",
       imgSrc: "/vt.jpg",
       imgAlt: "VT Certificate",
       id: "vt-cert",
+    },
+    
+    {
+      title: "Internship from Unstop Academy",
+      description: "Unstop",
+      imgSrc: "/Unstop.jpg",
+      imgAlt: "Internship Certificate",
+      id: "unstop-cert",
     },
   ];
 
