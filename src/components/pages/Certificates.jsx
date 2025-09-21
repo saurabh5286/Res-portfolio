@@ -67,6 +67,14 @@ function Certificates() {
       imgAlt: "Internship Certificate",
       id: "unstop-cert",
     },
+    
+    {
+      title: "Effective Resume and Cover Letter",
+      description: "TCS",
+      imgSrc: "/tcs.png",
+      imgAlt: "tcs Certificate",
+      id: "tcs-cert",
+    },
   ];
 
   const [activeImage, setActiveImage] = useState(null);
