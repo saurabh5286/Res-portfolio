@@ -33,9 +33,9 @@ const Projects = () => {
       },
       {
         id: 5,
-        name: "SnowCourse landing page",
-        description: "It is a SPA (single page application)",
-        url: "https://github.com/saurabh5286",
+        name: "Smriddhi",
+        description: "Study Materials provider",
+        url: "https://smriddhi2-0.vercel.app/",
       },
       {
         id: 6,
