@@ -35,7 +35,7 @@ const Projects = () => {
         id: 5,
         name: "Smriddhi",
         description: "Study Materials provider",
-        url: "https://shikshaa.vercel.app/",
+        url: "https://smriddhi2-0.vercel.app/",
       },
       {
         id: 6,
