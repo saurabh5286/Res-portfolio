@@ -23,6 +23,14 @@ function Certificates() {
       imgAlt: "HTML CSS Certificate",
       id: "html-css-cert",
     },
+    
+    {
+      title: "MERN STACK DEVELOPEMENT ",
+      description: "mindluster",
+      imgSrc: "/mern.jpg",
+      imgAlt: "mern Stack",
+      id: "mern-stack-cert",
+    },
     {
       title: "Web Development",
       description: "Web Development Training",
