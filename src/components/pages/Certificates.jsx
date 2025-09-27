@@ -83,6 +83,14 @@ function Certificates() {
       imgAlt: "tcs Certificate",
       id: "tcs-cert",
     },
+    
+    {
+      title: "DevOps",
+      description: "Simplilearn",
+      imgSrc: "/DevOps.png",
+      imgAlt: "SimplilearnCertificate",
+      id: "devops-cert",
+    },
   ];
 
   const [activeImage, setActiveImage] = useState(null);
