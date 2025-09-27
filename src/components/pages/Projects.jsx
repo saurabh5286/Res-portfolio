@@ -41,7 +41,7 @@ const Projects = () => {
         id: 6,
         name: "Blog-app",
         description: "A simple blog posting app.",
-        url: "https://vt-project-pi.vercel.app/",
+        url: "https://vt-project-pi.vercel.app",
       },
       {
         id: 7,
