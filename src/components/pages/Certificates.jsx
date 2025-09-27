@@ -91,6 +91,13 @@ function Certificates() {
       imgAlt: "SimplilearnCertificate",
       id: "devops-cert",
     },
+    {
+      title: "Azur Fundamentals",
+      description: "Simplilearn",
+      imgSrc: "/Azur.png",
+      imgAlt: "SimplilearnCertificate",
+      id: "azur-cert",
+    },
   ];
 
   const [activeImage, setActiveImage] = useState(null);
