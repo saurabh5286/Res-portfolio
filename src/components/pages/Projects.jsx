@@ -45,9 +45,9 @@ const Projects = () => {
       },
       {
         id: 7,
-        name: "Figma - Barber Shop",
+        name: "Insta- Clone App",
         description: "It is a fully responsive web app with functionality",
-        url: "https://github.com/saurabh5286",
+        url: "https://clone-zeta-ten.vercel.app/",
       },
     ].map((project) => (
       <li key={project.id} className="bg-gray-200 p-4 rounded-lg shadow-md">
