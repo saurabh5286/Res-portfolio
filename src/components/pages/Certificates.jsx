@@ -2,165 +2,82 @@ import React, { useState } from 'react';
 
 function Certificates() {
   const certificates = [
-    {
-      title: "Programming in JAVA",
-      description: "mindluster",
-      imgSrc: "/Java.jpg",
-      imgAlt: "Java Certificate",
-      id: "java-cert",
-    },
-    {
-      title: "JavaScript Fundamentals",
-      description: "GreatStack",
-      imgSrc: "/JS.jpg",
-      imgAlt: "JavaScript Certificate",
-      id: "javascript-cert",
-    },
-    {
-      title: "HTML & CSS Practical Learning",
-      description: "mindluster",
-      imgSrc: "/Html.jpg",
-      imgAlt: "HTML CSS Certificate",
-      id: "html-css-cert",
-    },
-    
-    {
-      title: "MERN STACK DEVELOPEMENT ",
-      description: "mindluster",
-      imgSrc: "/mern.jpg",
-      imgAlt: "mern Stack",
-      id: "mern-stack-cert",
-    },
-    {
-      title: "Web Development",
-      description: "Web Development Training",
-      imgSrc: "/Web.jpg",
-      imgAlt: "Web Development Certificate",
-      id: "web-dev-cert",
-    },
-    {
-      title: "React",
-      description: "GreatStack",
-      imgSrc: "/React.jpg",
-      imgAlt: "React Certificate",
-      id: "react-cert",
-    },
-    
-    {
-      title: "AI For Beginners",
-      description: "HP Life",
-      imgSrc: "/HP.jpg",
-      imgAlt: "HP Certificate",
-      id: "hp-cert",
-    },
-    {
-      title: "Graphic Design with Photoshop",
-      description: "Mindluster",
-      imgSrc: "/graphic.jpeg",
-      imgAlt: "Graphic Design Certificate",
-      id: "graphic-cert",
-    },
-    {
-      title: "Vocational Training from ZAGER",
-      description: "ZAGER",
-      imgSrc: "/vt.jpg",
-      imgAlt: "VT Certificate",
-      id: "vt-cert",
-    },
-    
-    {
-      title: "Internship from Unstop Academy",
-      description: "Unstop",
-      imgSrc: "/Unstop.jpg",
-      imgAlt: "Internship Certificate",
-      id: "unstop-cert",
-    },
-    
-    {
-      title: "Effective Resume and Cover Letter",
-      description: "TCS",
-      imgSrc: "/tcs.png",
-      imgAlt: "tcs Certificate",
-      id: "tcs-cert",
-    },
-    
-    {
-      title: "DevOps",
-      description: "Simplilearn",
-      imgSrc: "/DevOps.png",
-      imgAlt: "SimplilearnCertificate",
-      id: "devops-cert",
-    },
-    {
-      title: "Azur Fundamentals",
-      description: "Simplilearn",
-      imgSrc: "/Azur.png",
-      imgAlt: "SimplilearnCertificate",
-      id: "azur-cert",
-    },
+    { title: "Programming in JAVA", description: "Mindluster", imgSrc: "/Java.jpg", imgAlt: "Java Certificate", id: "java-cert" },
+    { title: "JavaScript Fundamentals", description: "GreatStack", imgSrc: "/JS.jpg", imgAlt: "JavaScript Certificate", id: "javascript-cert" },
+    { title: "HTML & CSS Practical Learning", description: "Mindluster", imgSrc: "/Html.jpg", imgAlt: "HTML CSS Certificate", id: "html-css-cert" },
+    { title: "MERN Stack Development", description: "Mindluster", imgSrc: "/mern.jpg", imgAlt: "MERN Stack Certificate", id: "mern-stack-cert" },
+    { title: "Web Development", description: "Web Dev Training", imgSrc: "/Web.jpg", imgAlt: "Web Development Certificate", id: "web-dev-cert" },
+    { title: "React", description: "GreatStack", imgSrc: "/React.jpg", imgAlt: "React Certificate", id: "react-cert" },
+    { title: "AI for Beginners", description: "HP Life", imgSrc: "/HP.jpg", imgAlt: "AI Certificate", id: "hp-cert" },
+    { title: "Graphic Design with Photoshop", description: "Mindluster", imgSrc: "/graphic.jpeg", imgAlt: "Graphic Design Certificate", id: "graphic-cert" },
+    { title: "Vocational Training from ZAGER", description: "ZAGER", imgSrc: "/vt.jpg", imgAlt: "VT Certificate", id: "vt-cert" },
+    { title: "Internship from Unstop Academy", description: "Unstop", imgSrc: "/Unstop.jpg", imgAlt: "Internship Certificate", id: "unstop-cert" },
+    { title: "Effective Resume and Cover Letter", description: "TCS", imgSrc: "/tcs.png", imgAlt: "TCS Certificate", id: "tcs-cert" },
+    { title: "DevOps", description: "Simplilearn", imgSrc: "/DevOps.png", imgAlt: "DevOps Certificate", id: "devops-cert" },
+    { title: "Azure Fundamentals", description: "Simplilearn", imgSrc: "/Azur.png", imgAlt: "Azure Certificate", id: "azur-cert" },
   ];
 
   const [activeImage, setActiveImage] = useState(null);
 
-  const openImage = (imgSrc, imgAlt) => {
-    setActiveImage({ src: imgSrc, alt: imgAlt });
-  };
-
-  const closeImage = () => {
-    setActiveImage(null);
-  };
+  const openImage = (imgSrc, imgAlt) => setActiveImage({ src: imgSrc, alt: imgAlt });
+  const closeImage = () => setActiveImage(null);
 
   return (
-    <div name="Certifications" className="min-h-screen bg-gray-50 py-10 px-5">
-      <h1 className="text-4xl md:text-5xl font-bold text-center text-green-600 mb-12">
-        Certifications
-      </h1>
+    <section className="bg-gray-50 py-16 px-6">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-green-600 mb-12">
+          Certifications
+        </h2>
 
-      <div className="grid gap-8 max-w-5xl mx-auto md:grid-cols-2">
-        {certificates.map((cert) => (
-          <div
-            key={cert.id}
-            className="bg-white p-6 rounded-3xl shadow-md flex flex-col justify-between"
-          >
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">{cert.title}</h2>
-              <p className="text-gray-600 leading-relaxed">{cert.description}</p>
-            </div>
-            <button
-              onClick={() => openImage(cert.imgSrc, cert.imgAlt)}
-              className="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300"
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {certificates.map((cert) => (
+            <div
+              key={cert.id}
+              className="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow p-6 flex flex-col justify-between"
             >
-              View Certificate
-            </button>
-          </div>
-        ))}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {cert.title}
+                </h3>
+                <p className="text-sm text-gray-600">{cert.description}</p>
+              </div>
+
+              <button
+                onClick={() => openImage(cert.imgSrc, cert.imgAlt)}
+                className="mt-6 inline-block bg-gradient-to-r from-green-500 to-teal-600 text-white py-2 px-5 rounded-full font-medium text-sm hover:from-green-600 hover:to-teal-700 transition-all duration-300"
+              >
+                View Certificate
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal for viewing certificate */}
       {activeImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center backdrop-blur-sm"
           onClick={closeImage}
         >
           <div
-            className="bg-white rounded-lg overflow-hidden max-w-3xl w-full p-4 relative"
+            className="relative bg-white rounded-xl shadow-xl max-w-4xl w-full mx-4 md:mx-8 p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeImage}
-              className="absolute top-2 right-2 text-gray-700 hover:text-red-500 text-xl"
+              className="absolute top-3 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold"
             >
               &times;
             </button>
             <img
               src={activeImage.src}
               alt={activeImage.alt}
-              className="w-full max-h-[80vh] object-contain rounded-lg"
+              className="w-full max-h-[80vh] object-contain rounded-md transition-opacity duration-300"
             />
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
