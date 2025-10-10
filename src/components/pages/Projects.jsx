@@ -39,9 +39,9 @@ const projects = [
   },
   {
     id: 7,
-    name: "Instagram Clone",
+    name: "Github Profile",
     description: "Fully responsive clone with post and profile features.",
-    url: "https://clone-zeta-ten.vercel.app/",
+    url: "https://github.com/saurabh5286",
   },
 ];
 
